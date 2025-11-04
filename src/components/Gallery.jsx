@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { getAssetPath } from '../utils/paths';
 
 const Gallery = () => {
   const ref = useRef(null);
@@ -8,19 +9,19 @@ const Gallery = () => {
 
   const images = [
     {
-      src: '/assets/galeria/Gemini_Generated_Image_2dpvg72dpvg72dpv.png',
+      src: getAssetPath('assets/galeria/Gemini_Generated_Image_2dpvg72dpvg72dpv.png'),
       alt: 'Ambiente Grano y Aroma 1',
     },
     {
-      src: '/assets/galeria/Gemini_Generated_Image_2dpvg72dpvg72dpv-2.png',
+      src: getAssetPath('assets/galeria/Gemini_Generated_Image_2dpvg72dpvg72dpv-2.png'),
       alt: 'Ambiente Grano y Aroma 2',
     },
     {
-      src: '/assets/galeria/Gemini_Generated_Image_9mbdya9mbdya9mbd.png',
+      src: getAssetPath('assets/galeria/Gemini_Generated_Image_9mbdya9mbdya9mbd.png'),
       alt: 'Ambiente Grano y Aroma 3',
     },
     {
-      src: '/assets/galeria/Gemini_Generated_Image_9mbdya9mbdya9mbd-2.png',
+      src: getAssetPath('assets/galeria/Gemini_Generated_Image_9mbdya9mbdya9mbd-2.png'),
       alt: 'Ambiente Grano y Aroma 4',
     },
   ];

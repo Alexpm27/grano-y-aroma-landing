@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
+import { getAssetPath } from '../utils/paths';
 
 const Menu = () => {
   const ref = useRef(null);
@@ -306,7 +307,7 @@ const Menu = () => {
             className="relative overflow-hidden rounded-lg shadow-2xl group"
           >
             <img
-              src="/assets/menu/Gemini_Generated_Image_z7y49fz7y49fz7y4.png"
+              src={getAssetPath('assets/menu/Gemini_Generated_Image_z7y49fz7y49fz7y4.png')}
               alt="Café especial"
               className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               loading="lazy"
@@ -320,7 +321,7 @@ const Menu = () => {
             className="relative overflow-hidden rounded-lg shadow-2xl group"
           >
             <img
-              src="/assets/menu/Gemini_Generated_Image_z7y49fz7y49fz7y4-2.png"
+              src={getAssetPath('assets/menu/Gemini_Generated_Image_z7y49fz7y49fz7y4-2.png')}
               alt="Bebida fría"
               className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               loading="lazy"

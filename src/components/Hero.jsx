@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { getAssetPath } from '../utils/paths';
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/assets/banner/Gemini_Generated_Image_ygk02ygk02ygk02y.png')",
+          backgroundImage: `url('${getAssetPath('assets/banner/Gemini_Generated_Image_ygk02ygk02ygk02y.png')}')`,
         }}
       >
         {/* Dark Overlay */}

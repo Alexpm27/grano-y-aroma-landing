@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { getAssetPath } from '../utils/paths';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +39,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#inicio" className="flex items-center">
             <img
-              src="/assets/logo/WhatsApp Image 2025-10-26 at 21.48.59.jpeg"
+              src={getAssetPath('assets/logo/WhatsApp Image 2025-10-26 at 21.48.59.jpeg')}
               alt="Grano y Aroma Logo"
               className="h-12 w-12 object-contain rounded-full"
             />

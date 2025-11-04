@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { getAssetPath } from '../utils/paths';
 
 const About = () => {
   const ref = useRef(null);
@@ -48,7 +49,7 @@ const About = () => {
             className="relative"
           >
             <img
-              src="/assets/interior/Gemini_Generated_Image_wvcyxvwvcyxvwvcy.png"
+              src={getAssetPath('assets/interior/Gemini_Generated_Image_wvcyxvwvcyxvwvcy.png')}
               alt="Interior de Grano y Aroma"
               className="rounded-lg shadow-2xl w-full h-auto object-cover"
               loading="lazy"

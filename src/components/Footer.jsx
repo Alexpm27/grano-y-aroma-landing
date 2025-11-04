@@ -1,4 +1,5 @@
 import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
+import { getAssetPath } from '../utils/paths';
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         {/* Logo and Name */}
         <div className="text-center mb-6">
           <img
-            src="/assets/logo/WhatsApp Image 2025-10-26 at 21.48.59.jpeg"
+            src={getAssetPath('assets/logo/WhatsApp Image 2025-10-26 at 21.48.59.jpeg')}
             alt="Grano y Aroma Logo"
             className="h-16 w-16 object-contain mx-auto mb-4 rounded-full"
           />
